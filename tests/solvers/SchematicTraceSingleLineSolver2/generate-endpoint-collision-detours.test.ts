@@ -1,4 +1,4 @@
-import { expect, test } from "vitest"
+import { expect, test } from "bun:test"
 import { generateEndpointCollisionDetours } from "lib/solvers/SchematicTraceLinesSolver/SchematicTraceSingleLineSolver2/generateEndpointCollisionDetours"
 
 test("endpoint collision detours preserve both endpoint anchors", () => {

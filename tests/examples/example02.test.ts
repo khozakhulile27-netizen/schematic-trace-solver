@@ -1,4 +1,4 @@
-import { test, expect } from "vitest"
+import { test, expect } from "bun:test"
 import { SchematicTracePipelineSolver } from "lib/solvers/SchematicTracePipelineSolver/SchematicTracePipelineSolver"
 import inputProblem from "../assets/example02.json"
 import "tests/fixtures/matcher"
@@ -8,5 +8,5 @@ test("example02", () => {
 
   solver.solve()
 
-  expect(solver).toBeDefined()
+  expect(solver).toMatchSolverSnapshot(import.meta.path)
 })

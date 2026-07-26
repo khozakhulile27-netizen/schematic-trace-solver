@@ -1,5 +1,5 @@
-import { expect } from "vitest"
-import { test } from "vitest"
+import { expect } from "bun:test"
+import { test } from "bun:test"
 import {
   getSvgFromGraphicsObject,
   stackGraphicsHorizontally,
